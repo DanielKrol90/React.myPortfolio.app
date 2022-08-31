@@ -27,7 +27,7 @@ const Work = () => {
   return (
     <>
       <h2 className="head-text">
-        My Creative <span>Portfolio</span>&nbsp;section Head
+        My Creative <span>Portfolio</span>&nbsp;section
       </h2>
 
       <div className="app__work-filter">
@@ -52,7 +52,7 @@ const Work = () => {
         className="app__work-portfolio"
       >
         {filterWork.map((work, index) => (
-          <div className="app_work-item app__flex" key={index}>
+          <div className="app__work-item app__flex" key={index}>
             <div className="app__work-img app__flex">
               <img src={urlFor(work.imgUrl)} alt={work.name} />
               <motion.div
@@ -90,6 +90,10 @@ const Work = () => {
               <div className="app__work-content app__flex">
                   <h4 className="bold-text">{work.title}</h4>
                   <p className="p-text" style={{ marginTop: 10 }}>{work.description}</p>
+
+                  <div className="app__work-tag app__flex">
+                      <p className="p-text">{work.tags[0]}</p>
+                  </div>
               </div>
 
 
