@@ -36,6 +36,7 @@ import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
 import user from '../assets/user.jpg';
 import userImg from '../assets/user_profile.png'
+import logo_2 from '../assets/logo_2.png';
 
 export default {
   email,
@@ -73,4 +74,5 @@ export default {
   spotify,
   user,
   userImg,
+  logo_2
 };
