@@ -9,11 +9,11 @@ import "./Testimonial.scss";
 const Testimonial = () => {
   const [brands, setBrands] = useState([]);
   const [testimonials, setTestimonials] = useState([]);
-  const [currentIndex, setCurrentIndex] = useState([0]);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleClick = (index) => {
-    setCurrentIndex(index)
-  }
+    setCurrentIndex(index);
+  };
 
   useEffect(() => {
     const query = '*[_type == "testimonials"]';
@@ -33,6 +33,7 @@ const Testimonial = () => {
   return (
     <>
       {testimonials.length && (
+        
         <>
           <div className="app__testimonial-item app__flex">
             <img
